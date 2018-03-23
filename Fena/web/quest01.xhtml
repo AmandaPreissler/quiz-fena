@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Questão 01</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="StyleSheet" type="text/css" href="./assets/css/bootstrap.css" media="screen" />
+        <link rel="StyleSheet" type="text/css" href="./assets/css/stylo.css" media="screen" />
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+    </h:head>
+    <h:body>
+        <div class="questionario-01">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Inicio</a></li>
+                    <li class="breadcrumb-item"><a>Questão 01</a></li>
+                </ol>
+            </nav>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Questão 01</h1><br/>
+                    <p class="lead text-justify">Qual o projeto desenvolvido pela Unimed FNO/RS que seleciona jovens aprendizes?</p>
+                    <div class="row">
+                        <h:form class="col-xl-12">  
+                            <!--data-toggle="buttons"-->
+                            <div class="text-left font-quest" >
+                                <h:selectOneRadio  id="sorPrincipal" value = "#{QuizMB.option}" layout="pageDirection">
+                                    <f:selectItem  itemValue="option1" itemLabel="Projeto X"/>
+                                    <f:selectItem  itemValue="option2" itemLabel="Conquistando o Futuro"/>
+                                    <f:selectItem  itemValue="option3" itemLabel="Projeto Jovem do Futuro"/>
+                                    <f:selectItem  itemValue="option4" itemLabel="Unidos pelo Futuro "/>
+                                    <f:selectItem  itemValue="option5" itemLabel="Aprendizado Jovem"/>
+                                </h:selectOneRadio>  
+                            </div>
+                            <div class="text-left padd">  
+                                <!--action=""--> 
+                                <h:commandButton  class="btn btn-lg btn-success" value="Enviar" action="#{QuizMB.enviaQuestao01()}" id="ticket-to-ride" />
+                            </div>
+                            <div id="temporaria" class="padd">
+                                <h:form >
+                                    <p:commandButton type="submit" class="btn btn-outline-success" action="#{RedirMB.quest02()}" value="Começar!"></p:commandButton>
+                                    <p:commandButton type="submit" class="btn btn-outline-success" action="#{RedirMB.respquest1()}" value="RESPOSTA!"></p:commandButton>
+                                </h:form>
+                            </div>
+                        </h:form>
+                    </div>
+                </h:panelGroup>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </h:body>
+</html>

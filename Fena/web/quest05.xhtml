@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Questão 05</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="StyleSheet" type="text/css" href="./assets/css/bootstrap.css" media="screen" />
+        <link rel="StyleSheet" type="text/css" href="./assets/css/stylo.css" media="screen" />
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+    </h:head>
+    <h:body>
+        <div class="questionario-05">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Inicio</a></li>
+                    <li class="breadcrumb-item"><a>Q1</a></li>
+                    <li class="breadcrumb-item"><a>Q2</a></li>
+                    <li class="breadcrumb-item"><a>Q3</a></li>
+                    <li class="breadcrumb-item"><a>Q4</a></li>
+                    <li class="breadcrumb-item"><a>Questão 05</a></li>
+                </ol>
+            </nav>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Questão 05</h1><br/>
+                    <p class="lead text-justify">Quais os Serviços Próprios e/ou Unidades de Negócio que a Unimed FNO/RS possui para melhor atender seus clientes?</p>
+                    <div class="row">
+                        <h:form class="col-xl-12">  
+                            <!--data-toggle="buttons"-->
+                            <div class="text-left font-quest" >
+                                <h:selectOneRadio  id="sorPrincipal" value ="#{QuizMB.option}" layout="pageDirection">
+                                    <f:selectItem  itemValue="option1" itemLabel="Postos de Coletas e Laboratórios de Análises"/>
+                                    <f:selectItem  itemValue="option2" itemLabel="Serviços de Imagens"/>
+                                    <f:selectItem  itemValue="option3" itemLabel="Centro de Saúde Ocupacional"/>
+                                    <f:selectItem  itemValue="option4" itemLabel="Ambulatório Hospitalar"/>
+                                    <f:selectItem  itemValue="option5" itemLabel="Todas as opções listadas anteriormente"/>
+                                </h:selectOneRadio>  
+                            </div>
+                            <div class="text-left padd"> 
+                                <h:commandButton class="btn btn-lg btn-success " value = "Enviar" action = "result" />
+                            </div>
+                            <div id="temporaria" class="padd">
+                                <h:form>
+                                    <p:commandButton type="submit" class="btn btn-outline-success" action="#{RedirMB.resultado()}" value="Começar!"></p:commandButton>
+                                    <p:commandButton type="submit" class="btn btn-outline-success" action="#{RedirMB.respquest5()}" value="RESPOSTA!"></p:commandButton>
+                                </h:form>
+                            </div>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+            <br/> <br/> <br/> <br/> 
+        </div>
+    </h:body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>QUIZ UNIMEDs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="StyleSheet" type="text/css" href="./assets/css/bootstrap.css" media="screen" />
+        <link rel="StyleSheet" type="text/css" href="./assets/css/stylo.css" media="screen" />
+    </h:head>
+    <h:body> 
+        <div class="questionario-intro">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Página Inicial</a></li>
+                    <li class="breadcrumb-item"><a>Sobre</a></li>
+                </ol>
+            </nav>
+            <div class="jumbotron jumbotron-fluid ">
+                <div class="container">
+                    <h1 class="display-3 text-center">Quiz Consciente</h1>
+                    <p class="lead text-center">Os seguintes passos irão nos levar por todos os projetos sociais e 
+                        desenvolvidos pela Unimed. Nosso objetivo é fazer você conhecer ainda mais
+                        nosso envolvimentos com nossa região! 
+                        <br/>Quem acertar mais ganha um brinde!</p>
+                    <h1 class="text-center">BOA SORTE!</h1>
+                    <br/>
+                    <div class="text-center padd">
+                        <h:form>
+                            <p:commandButton type="submit" class="btn btn-outline-success" action="#{RedirMB.iniciaQuiz()}" value="Começar!"></p:commandButton>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </h:body>
+</html>

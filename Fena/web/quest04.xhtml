@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Questão 04</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="StyleSheet" type="text/css" href="./assets/css/bootstrap.css" media="screen" />
+        <link rel="StyleSheet" type="text/css" href="./assets/css/stylo.css" media="screen" />
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+    </h:head>
+    <h:body>
+        <div class="questionario-04">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Inicio</a></li>
+                    <li class="breadcrumb-item"><a>Q1</a></li>
+                    <li class="breadcrumb-item"><a>Q2</a></li>
+                    <li class="breadcrumb-item"><a>Q3</a></li>
+                    <li class="breadcrumb-item"><a>Questão 04</a></li>
+                </ol>
+            </nav>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Questão 04</h1>             <br/>
+                    <p class="lead text-justify">Qual o projeto desenvolvido pela Unimed FNO/RS que visa o consumo consciente de recursos naturais?</p>
+                    <div class="row">
+                        <h:form class="col-xl-12">  
+                            <!--data-toggle="buttons"-->
+                            <div class="text-left font-quest" >
+                                <h:selectOneRadio  id="sorPrincipal" value ="#{QuizMB.option}" layout="pageDirection">
+                                    <f:selectItem  itemValue="option1" itemLabel="Planeta Consciente"/>
+                                    <f:selectItem  itemValue="option2" itemLabel="Economia Sustentável"/>
+                                    <f:selectItem  itemValue="option3" itemLabel="Consciencia Sustentável"/>
+                                    <f:selectItem  itemValue="option4" itemLabel="Planeta Econômico"/>
+                                    <f:selectItem  itemValue="option5" itemLabel="Consumo Consciente"/>
+                                </h:selectOneRadio>  
+                            </div>
+                            <div class="text-left padd"> 
+                                <h:commandButton class="btn btn-lg btn-success " value = "Enviar" action = "#{QuizMB.enviaQuestao04()}" />
+                            </div>
+                            <div id="temporaria" class="padd">
+                                <h:form>
+                                    <p:commandButton type="submit" class="btn btn-outline-success" action="#{RedirMB.quest05()}" value="Começar!"></p:commandButton>
+                                    <p:commandButton type="submit" class="btn btn-outline-success" action="#{RedirMB.respquest4()}" value="RESPOSTA!"></p:commandButton>
+                                </h:form>
+                            </div>               
+                        </h:form>
+                    </div>               
+                </div>
+            </div>
+            <br/><br/><br/><br/><br/>
+        </div>
+    </h:body>
+</html>

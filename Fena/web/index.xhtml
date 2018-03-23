@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Unimed FNO - Fenasoja 2018</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="StyleSheet" type="text/css" href="./assets/css/bootstrap.css" media="screen" />
+        <link rel="StyleSheet" type="text/css" href="./assets/css/stylo.css" media="screen" />
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+    </h:head>
+    <h:body >
+        <div class="cor">
+            <h:form id="formPrincipal">
+                <nav class="nav header">
+                    <div class="text-left row centrino">
+                        <img src="./assets/img/logo.png" class="rounded" alt="..."/>
+                        <!--<img src="./assets/img/fenasoja-white.png" class="rounded"  alt="..."/>-->
+                    </div>
+                </nav>
+                <div class="container">
+                    <h:form id="formInterno" class="col-xl-10">
+                        <div class="form-group">
+                            <label for="nomePessoa">Nome Completo</label>
+                            <p:inputText type="text" class="form-control form-control-lg" id="nomePessoa" value="#{PessoaMB.pessoa.nome}" placeholder="Nome"></p:inputText>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <p:inputText type="email" class="form-control form-control-lg" id="exampleInputEmail1" value="#{PessoaMB.pessoa.email}" placeholder="Enter email"></p:inputText>
+                        </div>
+                        <div class="form-group ">
+                            <label for="nascimento">Data de Nascimento</label>
+                            <p:inputText type="date" class="form-control form-control-lg" id="nascimento" value="#{PessoaMB.pessoa.dataNasc}" placeholder="Nascimento"></p:inputText>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefoone">Telefone</label>
+                            <p:inputText type="phone" class="form-control form-control-lg" id="telefoone" value="#{PessoaMB.pessoa.telefone}" placeholder="99-99999999"></p:inputText>
+                        </div>
+                        <div class="form-group">
+                            <label for="municipio">Município de Residência</label>
+                            <p:inputText type="text" class="form-control form-control-lg" id="municipio" value="#{PessoaMB.pessoa.cidade}" placeholder="Cidade - UF"></p:inputText>
+                        </div>
+                        <div>
+                            <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+                                <!--<h:outputText value="É cliente Unimed? " />-->
+                                <label>É cliente Unimed?</label>
+                                <h:selectBooleanCheckbox value="#{PessoaMB.pessoa.cliente}" />
+                            </h:panelGrid>
+                        </div>
+                        <br/>
+                        <div class="text-right">
+                            <p:commandButton id="alo" type="submit" class="btn btn-success" action="#{PessoaMB.enviaCadastro()}" value="Salvar"></p:commandButton>
+                        </div>
+                    </h:form>
+                </div>
+            </h:form>
+            <br/>
+            <br/>
+            <br/>
+        </div> 
+    </h:body>
+</html>
+

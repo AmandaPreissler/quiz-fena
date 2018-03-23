@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Questão 05</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="StyleSheet" type="text/css" href="./assets/css/bootstrap.css" media="screen" />
+        <link rel="StyleSheet" type="text/css" href="./assets/css/stylo.css" media="screen" />
+    </h:head>
+    <h:body>
+        <div class="questionario-05">
+            <nav class="nav header">
+                <div class="text-left row centrino">
+                    <img src="./assets/img/logo.png" class="rounded" alt="..."/>
+                    <!--<img src="./assets/img/fenasoja-white.png" class="rounded"  alt="..."/>-->
+                </div>
+            </nav>
+            <!-- resposta certa -->
+            <h:panelGroup>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <div class="row centrino">
+                            <h1 class="display-2 text-center">Todas as alternativas!</h1>
+                            <br/>
+                            <p class="lead text-justify"><br/> A Unimed contém Postos de Coletas e Laboratórios de Análises, Serviços de Imagens, Centro de Saúde Ocupacional, Ambulatório Hospitalar!  </p>
+                            <div class="text-center col-xl-4">
+                                <img src="./assets/img/sede-ad.jpg" class="rounded img-fluid" alt="..."/>
+                            </div> 
+                        </div>
+                        <div class="text-center padd">
+                            <h:form>
+                                <p:commandButton type="submit" class="btn btn-outline-success" action="#{RedirMB.resultado()}" value="Próxima"></p:commandButton>
+                            </h:form>
+                        </div>
+                    </div>        
+                </div>        
+            </h:panelGroup>
+            <br/> <br/> <br/> <br/> 
+        </div>
+    </h:body>
+</html>

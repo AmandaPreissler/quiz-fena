@@ -1,0 +1,75 @@
+/*https://stackoverflow.com/questions/11988415/what-is-the-jsf-resource-library-for-and-how-should-it-be-used/11988418#11988418*/
+/*verde #00995D	#00401A
+#FFF0C7*/
+.header {
+    color: whitesmoke !important;
+    background-color: #00401a;
+    text-align: center;
+    padding: 10px 10px 10px 0px !important;
+    margin-bottom: 10px;
+}
+.pare{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formulario{
+    padding-top: 15px;
+}
+
+.esconde{
+    display: none;
+}
+.padd{
+    padding-top: 30px;
+}
+
+.centrino{
+    margin: 0 auto;
+}
+
+label{
+    font-size: 80%;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+.questionario-intro{
+    background-color: #ED1651 !important;
+}
+.questionario-01{
+    background-color:#FFCB08;
+}
+.questionario-02{ 
+    /*background-color: #F47920; //laranja// */ 
+    background-color:#B1D348;
+}
+.questionario-03{
+    background-color: #A3238E;
+}
+.questionario-04{
+    background-color: #F47920;
+}
+.questionario-05{
+    background-color: #411564;
+}
+.font-quest{
+    font-family: inherit;
+    font-size: 120%
+}
+.borda{
+    border-style: dotted;
+    border-width: 2px;
+}
+.cor{
+    background-color: #FFF0C7;
+}
+.div-isnt-in-the-box{
+    display: none;
+}
+label{
+    font-size: 120%;
+}
+input[type=radio]{
+    margin-right: 7px;
+    padding: 50px;
+}
